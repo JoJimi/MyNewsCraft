@@ -1,0 +1,9 @@
+# 공통
+.gradle
+.git
+build
+*.log
+
+# 백엔드 전용
+backend/src/**/*.class
+backend/build/tmp/
