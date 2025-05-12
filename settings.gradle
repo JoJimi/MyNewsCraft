@@ -1,0 +1,4 @@
+rootProject.name = 'Stream_Watch'
+
+include 'frontend'
+include 'backend'
