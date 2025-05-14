@@ -1,0 +1,18 @@
+buildscript {
+    repositories { mavenCentral() }
+}
+
+allprojects {
+    repositories { mavenCentral() }
+}
+
+subprojects {
+    apply plugin: 'java'           // 자바 공통 플러그인
+    sourceCompatibility = '17'
+    version = '0.0.1-SNAPSHOT'
+
+    // 테스트 설정이 공통이라면 여기로 옮길 수도 있습니다.
+    tasks.withType(Test) {
+        useJUnitPlatform()
+    }
+}

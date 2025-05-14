@@ -1,0 +1,38 @@
+# Gradle
+.gradle/
+build/                          # 루트 빌드 디렉토리
+!gradle/wrapper/gradle-wrapper.jar
+
+# Backend (Spring Boot)
+backend/build/                  # backend 모듈 빌드 산출물
+
+# Frontend (Vue + Vite)
+frontend/node_modules/          # 프론트엔드 의존성
+frontend/dist/                  # 프론트엔드 빌드 결과
+
+# IDE / Editor
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# OS
+.DS_Store
+
+# Optional: 로그, 환경파일 등
+*.log
+.env
